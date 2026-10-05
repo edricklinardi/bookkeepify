@@ -1,0 +1,18 @@
+services:
+  postgres:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: bookkeepify
+      POSTGRES_PASSWORD: bookkeepify
+      POSTGRES_DB: bookkeepify
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U bookkeepify"]
+      interval: 5s
+      retries: 10
+
+volumes:
+  pgdata:

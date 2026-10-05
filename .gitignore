@@ -1,0 +1,6 @@
+.env
+/bin/
+*.test
+*.out
+.DS_Store
+node_modules/

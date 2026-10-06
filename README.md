@@ -2,7 +2,7 @@
 
 Turns a Spotify Liked Songs pile into a small set of coherent playlists, then keeps it sorted by routing every new like to the right playlist automatically.
 
-Design: [PRD & Design Doc](https://claude.ai/code/artifact/e10f8611-ed91-457c-9cf7-d5768d55eb85)
+[Design Doc](docs/design_v1.md)
 
 ## Layout
 
